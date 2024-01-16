@@ -20,7 +20,7 @@ const Rooms = () => {
 
     if (roomType) setRoomTypeFilter(roomType);
     if (searchQuery) setSearchQuery(searchQuery);
-  }, []);
+  }, [searchQuery]);
 
   async function fetchData() {
     return getRooms();
